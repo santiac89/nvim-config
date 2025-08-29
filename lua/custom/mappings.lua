@@ -1,6 +1,6 @@
 local map = vim.keymap.set
 
--- map('i', 'jk', '<ESC>')
+map('i', 'jk', '<ESC>')
 
 -- Delete Lines without copying
 map('n', '<C-G>', '"_dd', { desc = 'Delete Line' })
