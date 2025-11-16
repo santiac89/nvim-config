@@ -43,6 +43,9 @@ return {
             quit_on_open = true,
           },
         },
+        view = {
+          adaptive_size = true,
+        },
       }
       vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = '[E]xplorer Toggle' })
 
@@ -68,5 +71,8 @@ return {
   },
   {
     'ThePrimeagen/vim-be-good',
+  },
+  {
+    'mbbill/undotree',
   },
 }

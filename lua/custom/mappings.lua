@@ -26,3 +26,10 @@ map('n', '<Space>dn', ':lua vim.diagnostic.goto_next()<CR>', { desc = 'Next Diag
 -- Go to prev diagnostic (if there are multiple on the same line, only shows
 -- one at a time in the floating window)
 map('n', '<Space>dp', ':lua vim.diagnostic.goto_prev()<CR>', { desc = 'Prev Diagnostic', noremap = true, silent = true })
+
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+-- vim.keymap.set('i', '<C-c>', '<Esc>')
+--
+--
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'Toggle Undo tree' })
